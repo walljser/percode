@@ -13,7 +13,7 @@ const a = [
 
 a.sort((a, b) => {
   if (a.end === b.end) {
-    return a.begin > b.bin
+    return a.begin > b.begin
   }
   return a.end > b.end
 })
