@@ -38,4 +38,4 @@ for (let i = 0; i < len; i++) {
   }
 }
 
-console.log('Maxinum value=' + sum)
+console.log('Maxinum value = ' + sum)
