@@ -9,17 +9,17 @@ const map = [
 ]
 const dist = []
 const p = []
-const flag = []
+const flag = [] // 标记顶点是否已加入到集合S中
 let n = map.length - 1
 
 function Dijkstra (u) {
   for (let i = 1; i <= n; i++) {
-    dist[i] = map[u][i]
+    dist[i] = map[u][i] // 初始化源点到各个点的最短路径
     flag[i] = false
     if (dist[i] === INF) {
-      p[i] = -1
+      p[i] = -1 // -1代表源点与点i不相邻
     } else {
-      p[i] = u
+      p[i] = u // 说明相邻，设置定点i的前驱p[i]为u
     }
   }
   dist[u] = 0
